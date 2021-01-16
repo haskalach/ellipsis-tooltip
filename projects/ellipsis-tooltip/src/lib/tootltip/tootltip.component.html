@@ -1,5 +1,6 @@
 <div [ngClass]="[alignCenter === true ? 'align-center' : 'tooltip-container', showtooltip ? 'cursor-pointer' : '']"
-  [tooltip]="toolTipText" [isDisabled]="!showtooltip" container="body" [adaptivePosition]="false">
+  [tooltip]="toolTipText" [isDisabled]="!showtooltip" container="body" [adaptivePosition]="adaptivePorition"
+  triggers="mouseenter mouseleave">
   <div class="ellipsis-text" [ngClass]="hoverStyle?'ellipsis-text-hover':''"
     [ngStyle]="{'text-decoration': extraStyle ? 'underline' : 'none' }" #item>
     <ng-content></ng-content>

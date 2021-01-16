@@ -12,9 +12,10 @@ export class TootltipComponent implements OnInit {
   showtooltip = false;
   toolTipText = '';
 
-  @Input() alignCenter = false;;
+  @Input() alignCenter = false;
   @Input() hoverStyle = false;
   @Input() extraStyle = false;
+  @Input() adaptivePorition = true;
 
   constructor(private cdRef: ChangeDetectorRef) { }
 
