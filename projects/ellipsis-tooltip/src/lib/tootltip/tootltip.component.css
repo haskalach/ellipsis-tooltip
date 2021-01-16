@@ -1,0 +1,22 @@
+.tooltip-container {
+  float: left;
+  max-width: 100%;
+}
+
+.ellipsis-text ::content {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.align-center {
+  float: none;
+  max-width: 100%;
+}
+.ellipsis-text-hover:hover{
+  text-decoration: underline;
+}
