@@ -125,6 +125,46 @@
           }
         }
       }
+    },
+    "ellipsis-tooltip": {
+      "projectType": "library",
+      "root": "projects/ellipsis-tooltip",
+      "sourceRoot": "projects/ellipsis-tooltip/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ellipsis-tooltip/tsconfig.lib.json",
+            "project": "projects/ellipsis-tooltip/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ellipsis-tooltip/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ellipsis-tooltip/src/test.ts",
+            "tsConfig": "projects/ellipsis-tooltip/tsconfig.spec.json",
+            "karmaConfig": "projects/ellipsis-tooltip/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ellipsis-tooltip/tsconfig.lib.json",
+              "projects/ellipsis-tooltip/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ellipsis-tootltip"
