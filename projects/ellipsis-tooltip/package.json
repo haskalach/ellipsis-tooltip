@@ -1,6 +1,19 @@
 {
   "name": "ellipsis-tooltip",
   "version": "1.0.0",
+  "description":"Asimple tool using ngx tooltip to dynamicly show or hide a tooltip over texts when ever a size change occure",
+  "authro":"hassan kalach",
+  "repository":{
+    "type":"git",
+    "url": "https://github.com/haskalach/ellipsis-tooltip"
+  },
+  "keywords": [
+    "angular",
+    "typescript",
+    "ellipsis",
+    "tooltip"
+  ],
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^11.0.9",
     "@angular/core": "^11.0.9"
