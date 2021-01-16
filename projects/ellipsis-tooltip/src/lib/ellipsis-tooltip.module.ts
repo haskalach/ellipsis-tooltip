@@ -3,11 +3,11 @@ import { TootltipComponent } from './tootltip/tootltip.component';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { CommonModule } from '@angular/common';
 
-
+export const customTootltipModule = TooltipModule.forRoot();
 @NgModule({
   declarations: [TootltipComponent],
   imports: [
-    TooltipModule.forRoot(),
+    customTootltipModule,
     CommonModule
   ],
   exports: [TootltipComponent]
