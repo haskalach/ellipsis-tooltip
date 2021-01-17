@@ -16,7 +16,7 @@ than adding bootstrap styles to angular.json file
  "node_modules/bootstrap/dist/css/bootstrap.css"
 
  finaly wrapping your desired text inside the tooltip component 
- <lib-tootltip></lib-tootltip>
+ `<lib-tootltip></lib-tootltip>`
 
  ## Current issues
  the component will give a tslint error inside the editor , this will be updated soon 
